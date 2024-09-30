@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+.ProjectDivisions-add-item {
+    padding: 20px;
+    width: 30%;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.ProjectDivisions-add-item .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ProjectDivisions-add-item .header h2 {
+    margin-left: 10px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    color: rgb(125, 20, 20); 
+}
+
+.ProjectDivisions-add-item .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+.ProjectDivisions-add-item label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ProjectDivisions-add-item input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.buttons button:first-child {
+    background-color: #2e86de;
+    color: white;
+    border: none;
+}
+
+.buttons button:last-child {
+    background-color: #ccc;
+    border: none;
+}
+
+.buttons button:first-child:hover {
+    background-color: #54a0ff;
+    transform: scale(1.05);
+}
+.buttons button:last-child:hover {
+    background-color: #c8d6e5;
+    transform: scale(1.05);
+}
+.success-message {
+    background-color: #27ae60; 
+    color: white; 
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.check-icon {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.ProjectDivisions-add-item hr{
+    margin-bottom: 20px;
+}

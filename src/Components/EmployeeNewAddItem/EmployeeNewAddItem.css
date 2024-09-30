@@ -1,0 +1,94 @@
+.employee-form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.employee-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.employee-form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.employee-form input,
+.employee-form textarea,
+.employee-form select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    
+}
+
+.employee-form .employee-btn {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.employee-form .employee-btn button {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #341f97;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.employee-form .employee-btn button:hover {
+    background-color: #5f27cd;
+    transform: scale(1.05);
+}
+
+.employee-form .error-message {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.employee-form .success-message {
+    color: green;
+    font-size: 12px;
+    margin-bottom: 10px;
+    
+}
+
+.success-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: white;
+    border: 2px solid #41c4aa;
+    box-shadow: 24;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.success-modal h2 {
+    margin: 0 0 10px 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.success-modal p {
+    font-family: "Roboto", sans-serif;
+    color: #41c4aa;
+}

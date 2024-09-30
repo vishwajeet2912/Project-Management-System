@@ -1,0 +1,30 @@
+/* EmployeeEditItem.css */
+
+.edit-employee-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.edit-employee-container label {
+    font-weight: bold;
+}
+
+.edit-employee-container input,
+.edit-employee-container select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.edit-employee-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-employee-actions button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
