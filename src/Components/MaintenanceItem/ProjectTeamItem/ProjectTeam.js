@@ -1,18 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ProjectTeam.css';
 import AddIcon from '@mui/icons-material/Add';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ProjectTeamNewModal from '../../ProjectTeamNewModal/ProjectTeamNewModal';
 
 
 function ProjectTeam() {
+    const [showNewTeamModal, setShowNewTeamModal] = useState(false);
+
+    // Function to open the modal
+    const openNewTeamModal = () => {
+        setShowNewTeamModal(true);
+    };
+
+    // Function to close the modal
+    const closeNewTeamModal = () => {
+        setShowNewTeamModal(false);
+    };
+
     return (
         <div className="ProjectTeam-list-container">
             <div className="header">
                 <h2>Project Team</h2>
                 <hr />
-                <button className="new-ProjectTeam-btn"><AddIcon />New Team</button>
+                <button className="new-ProjectTeam-btn" onClick={openNewTeamModal}>
+                    <AddIcon /> New Team
+                </button>
             </div>
+
+            {/* Use the NewTeamModal component and pass the visibility state */}
+            <ProjectTeamNewModal show={showNewTeamModal} onClose={closeNewTeamModal} />
+
             <div className='ProjectTeam-content'>
                 <div className="table-controls-ProjectTeam">
                     <label>
@@ -39,9 +58,9 @@ function ProjectTeam() {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>John Smth</td>
-                            <td>-George Wlson</td>
-                            <td><button>Actve</button></td>
+                            <td>John Smith</td>
+                            <td>-George Wilson</td>
+                            <td><button>Active</button></td>
                             <td><a href="#" className="update-link">Update</a></td>
                         </tr>
                     </tbody>

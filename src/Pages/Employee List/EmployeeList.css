@@ -77,10 +77,10 @@
 }
 
 .status-btn.active {
-    background-color: #8c7ae6;
+    background-color: #3ae374;
 }
 .status-btn.inactive{
-    background-color: #8c7ae6;
+    background-color: #3ae374;
 } 
 .table-controls-employee {
     display: flex;
